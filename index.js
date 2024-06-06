@@ -5,7 +5,10 @@ import axios from "axios";
 const app = express();
 const port = 3000;
 
+//declare express-public middleware 
 app.use(express.static("public"));
+
+//declare body-parser middleware in order to parse user inputs from form
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", async (req, res) => {
