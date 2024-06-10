@@ -26,7 +26,7 @@ app.get("/", async (req, res) => {
 });
 */
 
-
+//render homepage with get request
 app.get("/", (req, res) =>{
 res.render("index.ejs", {});
 });
