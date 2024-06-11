@@ -8,9 +8,10 @@ const port = 3000;
 //declare express-public middleware 
 app.use(express.static("public"));
 
-//declare body-parser middleware in order to parse user inputs from form
+//declare body-parser middleware to parse user inputs from form
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//setup home route for the random activity endpoint
 app.get("/", async (req, res) => {
   try {
     const response = await axios.get("https://bored-api.appbrewery.com/random");
