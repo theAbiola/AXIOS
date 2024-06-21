@@ -33,6 +33,7 @@ app.get("/", (req, res) =>{
 res.render("index.ejs", {});
 });
 
+//get a particular activity
 app.post("/", async (req, res) => {
 
 
