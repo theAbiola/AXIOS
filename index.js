@@ -36,7 +36,7 @@ res.render("index.ejs", {});
 //get a particular activity
 app.post("/", async (req, res) => {
 
-
+//the try block
   try {
   console.log(req.body);
   const type = req.body.type;
