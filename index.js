@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //setup home route for the random activity endpoint
 app.get("/", async (req, res) => {
   try {
+    //we send a get request to the /random endpoint
     const response = await axios.get("https://bored-api.appbrewery.com/random");
     const result = response.data;
     console.log(result);
