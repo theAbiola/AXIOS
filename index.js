@@ -50,6 +50,8 @@ app.post("/", async (req, res) => {
     data: result[Math.floor(Math.random() * result.length)] 
   });
 } 
+
+//catch errors for making requests
 catch (error) {
   console.error("Failed to make request:", error.message);
   res.render("index.ejs", {
