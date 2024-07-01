@@ -41,6 +41,7 @@ app.post("/", async (req, res) => {
   try {
   console.log(req.body);
   const type = req.body.type;
+  //declaring the variable for the participants
   const participants = req.body.participants;
   const response = await axios.get(
     `https://bored-api.appbrewery.com/filter?type=${type}&participants=${participants}`);
